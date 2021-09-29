@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <meta charset="utf-8">
+    <title>Task 2.7</title>
+    <style>
+        div{
+            color:white;
+        }
+        .staticDiv{
+            background-color: blueviolet;
+            position: static;
+            height: 100px;
+            width: 150px;
+        }
+        .relativeDiv1{
+            background-color: darkred;
+            position: relative;
+            height: 100px;
+            width: 150px;
+        }
+        .relativeDiv2{
+            background-color: peru;
+            position: relative;
+            height: 100px;
+            width: 150px;
+            top: -30px;
+            left: 30px;
+        }
+        .relativeDiv3{
+            background-color: indianred;
+            position: relative;
+            height: 400px;
+            width: 500px;
+        }
+        .absoluteDiv{
+            background-color: indigo;
+            position: absolute;
+            height: 200px;
+            width: 300px;
+            left: 200px;
+            top: 100px;
+        }
+        .fixedDiv{
+            background-color:forestgreen;
+            height: 100px;
+            width: 100px;
+            position:fixed;
+            right: 0px;
+            bottom: 0px;
+            z-index: -1;
+        }
+    </style>
+    <body>
+        <div class="staticDiv">
+            It's a static div!
+        </div>
+        <div class="relativeDiv1">
+            It's a relative div!
+        </div>
+        <div class="relativeDiv2">
+            It's a relative div!
+        </div>
+        <div class="relativeDiv3">
+            It's a relative div!
+            <div class="absoluteDiv">
+                It's an absolute div with relative parent!
+            </div>
+        </div>
+        <div class="fixedDiv">
+            It's a fixed div!
+        </div>
+    </body>
+</html>
